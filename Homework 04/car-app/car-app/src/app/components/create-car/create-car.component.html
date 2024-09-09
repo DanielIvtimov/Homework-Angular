@@ -1,0 +1,17 @@
+<div class="create-car-form">
+    <h2 class="main-text">Create new car here</h2>
+    <label for="description">Description:</label>
+    <input type="text" id="description" placeholder="Enter car description" [(ngModel)]="newCar.description">
+
+    <label for="price">Price:</label>
+    <input type="text" id="price" placeholder="Enter car price" [(ngModel)]="newCar.price">
+
+    <label for="brand">Brand:</label>
+    <input type="text" id="brand" placeholder="Enter car brand" [(ngModel)]="newCar.brand">
+
+    <label for="model">Model:</label>
+    <input type="text" id="model" placeholder="Enter car model" [(ngModel)]="newCar.model">
+
+    <button (click)="createCar()">Create</button>
+</div>
+

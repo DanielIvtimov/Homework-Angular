@@ -1,0 +1,29 @@
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+  
+.navigation a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+  
+.navigation a:hover {
+    background-color: #007bff;
+    color: white;
+}
+  
+.navigation li {
+    display: inline-block;
+}

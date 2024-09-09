@@ -1,0 +1,30 @@
+<mat-card class="car-card" appearance="outlined">
+    <mat-card-header>
+        <mat-card-title>{{ car.brand }} {{ car.model }}</mat-card-title>
+        <mat-card-subtitle>{{ car.type }} - {{ car.year }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="car.images" alt="Car image" class="car-image">
+    <mat-card-content>
+        <div class="car-details">
+            <p><strong>Price:</strong> ${{ car.price | number:'1.0-0' }}</p> 
+            <p><strong>Engine Power:</strong> {{ car.enginePower }} HP</p>
+            <p><strong>Transmission:</strong> {{ car.transmission }}</p>
+            <p><strong>Fuel Type:</strong> {{ car.fuelType }}</p>
+            <p><strong>Color:</strong> {{ car.color }}</p>
+            <p><strong>Doors:</strong> {{ car.doors }}</p>
+            <p><strong>Seats:</strong> {{ car.seats }}</p>
+            <p><strong>Description:</strong> {{ car.description }}</p>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button color="primary">LIKE</button>
+        <button mat-button color="accent">SHARE</button>
+    </mat-card-actions>
+</mat-card>
+
+<!--Vo tagot za slika imav problem taka sto patekata sto ja vadam od serverot (back-end)-->
+<!--Ne znam kako da ja napisam za da mozam da napravam prikazuvanje na slikite-->
+<!--Ne znam dali moze da se napravi for of loop taka sto avtomatski ke gi vrti site sliki sto gi imame vo payload-->
+<!--Dobivav razlicni erros za ovie pateki ( car.images[0] i nesto probuvav vaka /car-images/1.jpg)-->
+<!--Ali sepak nishto-->
+

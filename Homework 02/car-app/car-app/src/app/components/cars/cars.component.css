@@ -1,0 +1,15 @@
+.car-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-text {
+    margin: 0 0 8px 0;
+}
+
+.text {
+    margin: 4px 0;
+}

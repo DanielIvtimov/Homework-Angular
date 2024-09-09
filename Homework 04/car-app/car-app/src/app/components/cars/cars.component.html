@@ -1,0 +1,15 @@
+<input type="text" placeholder="Search by brand" [(ngModel)]="searchingInput" class="brand-input" >
+
+<section class="car-card">
+    @for(car of cars() | carsPipe: searchingInput; track car.id){
+    <div class="card-content">
+        <div class="card-header">
+            <h3 class="main-text">{{car.brand}} {{car.model}}</h3>
+        </div>
+        <div class="card-body">
+            <p class="text">{{car.description}}</p>
+            <p class="price-text">Price: {{car.price | currency: 'EUR'}}</p>
+        </div>
+    </div>
+    }
+</section>
