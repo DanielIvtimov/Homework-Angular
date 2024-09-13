@@ -3,7 +3,7 @@
         <mat-card-title>{{ car.brand }} {{ car.model }}</mat-card-title>
         <mat-card-subtitle>{{ car.type }} - {{ car.year }}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="car.images" alt="Car image" class="car-image">
+    <img mat-card-image [src]="car.images?.[0]" alt="Car image" class="car-image">
     <mat-card-content>
         <div class="car-details">
             <p><strong>Price:</strong> ${{ car.price | number:'1.0-0' }}</p> 
@@ -22,9 +22,5 @@
     </mat-card-actions>
 </mat-card>
 
-<!--Vo tagot za slika imav problem taka sto patekata sto ja vadam od serverot (back-end)-->
-<!--Ne znam kako da ja napisam za da mozam da napravam prikazuvanje na slikite-->
-<!--Ne znam dali moze da se napravi for of loop taka sto avtomatski ke gi vrti site sliki sto gi imame vo payload-->
-<!--Dobivav razlicni erros za ovie pateki ( car.images[0] i nesto probuvav vaka /car-images/1.jpg)-->
-<!--Ali sepak nishto-->
+
 

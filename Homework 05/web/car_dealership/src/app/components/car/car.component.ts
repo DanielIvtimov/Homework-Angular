@@ -13,14 +13,6 @@ import { DecimalPipe } from '@angular/common';
 })
 export class CarComponent {
   @Input() car!: CarsData
-
-  //Gi probuvav slednite sintaksi ali imav errors koj sto nemozev da gi resam 
-  // So ovaa linija: @Input() car!: CarsData mi raboti for of loop
-
-  //So ovie linii ne mi raboti:
-  
-  // car = input<CarsData>();
-  // car = input.reqiured<CarsData[]>([]); 
 }
 
  

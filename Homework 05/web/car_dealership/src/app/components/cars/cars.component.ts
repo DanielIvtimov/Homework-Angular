@@ -14,7 +14,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
   styleUrl: './cars.component.css'
 })
 export class CarsComponent {
-  cars: Observable<CarsData[]> = new Observable<CarsData[]>();
+  cars: Observable<CarsData[]> = new Observable<CarsData[]>();  
 
   constructor(private readonly carsService: CarsServicesService){}
 
